@@ -1,22 +1,21 @@
-الگوریتم کوارین-مک کلاکی یک روش سیستماتیک برای ساده‌سازی توابع بولین است که برای هر تعداد متغیر کاربرد دارد. این برنامه:
+The Quine-McCluskey algorithm is a systematic method for simplifying Boolean functions that works for any number of variables. This program:
 
-· مین‌ترم‌های ورودی را دریافت می‌کند
-· آن‌ها را به فرم باینری تبدیل می‌کند
-· با استفاده از جدول کوارین-مک کلاکی پی‌آی‌های اولیه را پیدا می‌کند
-· ضروری‌ترین پی‌آی‌ها را با روش پتریک شناسایی می‌کند
-· تابع بولین ساده‌شده نهایی را تولید می‌کند
+· Accepts input minterms
+· Converts them to binary form
+· Uses the Quine-McCluskey table to find prime implicants (PIs)
+· Identifies essential prime implicants (EPIs) using the Petrick method
+· Generates the final simplified Boolean function
 
+How It Works
 
-روش کار
+1. Receives variables and input minterms from the user
+2. Converts minterms to binary form
+3. Constructs the Quine-McCluskey table and finds prime implicants
+4. Creates a coverage table to identify EPIs
+5. Finds essential prime implicants using the Petrick method
+6. Generates the final simplified Boolean function
 
-1. دریافت متغیرها و مین‌ترم‌های ورودی از کاربر
-2. تبدیل مین‌ترم‌ها به فرم باینری
-3. ساخت جدول کوارین-مک کلاکی و یافتن پی‌آی‌های اولیه
-4. ایجاد جدول پوشش برای شناسایی EPIها
-5. یافتن ضروری‌ترین پی‌آی‌ها با روش پتریک
-6. تولید تابع بولین ساده‌شده نهایی
+Limitations
 
- محدودیت‌ها
-
-· برنامه برای تعداد زیادی مین‌ترم ممکن است کند شود
-· فقط فرم SOP (مجموع حاصل‌ضرب‌ها) را پشتیبانی می‌کند
+· The program may slow down with a large number of minterms
+· Only supports SOP (Sum of Products) form
