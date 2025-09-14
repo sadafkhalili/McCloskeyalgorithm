@@ -1,3 +1,4 @@
+
 The Quine-McCluskey algorithm is a systematic method for simplifying Boolean functions that works for any number of variables. This program:
 
 · Accepts input minterms
